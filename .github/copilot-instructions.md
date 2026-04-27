@@ -5,7 +5,7 @@
 Qualia is a daily psychological wellbeing tracker. Users log three "intangibles" each day — a meaningful connection, a moment of savoring, and a flow state — based on the Harvard Study of Adult Development and Blue Zones research. It is a Next.js (App Router) web app hosted on Firebase App Hosting.
 
 **GitHub:** https://github.com/HallbergEric/Qualia
-**Firebase project:** `qualia-app`
+**Firebase project:** `qualia-app-2026`
 
 ## Development Commands
 
