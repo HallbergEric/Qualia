@@ -44,7 +44,8 @@ export default function HomePage() {
     const newEntry = { ...entry, ...updates };
     setEntry(newEntry);
     try {
-      await saveEntry(user.uid, dateStr, updates);
+      // Logic for new entries: ensure they have all required fields for Firestore rules
+      await saveEntry(user.uid, dateStr, newEntry);
     } catch (err) {
       console.error(err);
       toast.error("Failed to save changes");
