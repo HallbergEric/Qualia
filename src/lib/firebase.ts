@@ -22,7 +22,7 @@ if (typeof window !== "undefined") {
     // Enable debug token in development mode
     if (process.env.NODE_ENV === "development") {
       // @ts-ignore
-      self.FIREBASE_APPCHECK_DEBUG_TOKEN = true;
+      self.FIREBASE_APPCHECK_DEBUG_TOKEN = process.env.NEXT_PUBLIC_APP_CHECK_DEBUG_TOKEN || true;
     }
 
     initializeAppCheck(app, {
