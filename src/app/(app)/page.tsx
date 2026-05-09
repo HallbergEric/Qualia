@@ -10,7 +10,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { toast } from "sonner";
-import { Users, Utensils, Zap, Info } from "lucide-react";
+import { Heart, Sparkles, Brain, Info } from "lucide-react";
 import { 
   Tooltip, 
   TooltipContent, 
@@ -84,8 +84,8 @@ export default function HomePage() {
           <CardContent className="p-6">
             <div className="flex items-center justify-between gap-4">
               <div className="flex items-center gap-3">
-                <div className="rounded-full bg-blue-500/10 p-2 text-blue-500">
-                  <Users className="h-5 w-5" />
+                <div className="rounded-full bg-rose-500/10 p-2 text-rose-500">
+                  <Heart className="h-5 w-5" />
                 </div>
                 <div>
                   <div className="flex items-center gap-1.5">
@@ -127,7 +127,7 @@ export default function HomePage() {
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-3">
                 <div className="rounded-full bg-amber-500/10 p-2 text-amber-500">
-                  <Utensils className="h-5 w-5" />
+                  <Sparkles className="h-5 w-5" />
                 </div>
                 <div>
                   <div className="flex items-center gap-1.5">
@@ -173,8 +173,8 @@ export default function HomePage() {
           <CardContent className="p-6">
             <div className="flex items-center justify-between gap-4">
               <div className="flex items-center gap-3">
-                <div className="rounded-full bg-indigo-500/10 p-2 text-indigo-500">
-                  <Zap className="h-5 w-5" />
+                <div className="rounded-full bg-violet-500/10 p-2 text-violet-500">
+                  <Brain className="h-5 w-5" />
                 </div>
                 <div>
                   <div className="flex items-center gap-1.5">
