@@ -93,10 +93,8 @@ export default function HomePage() {
                       Meaningful Connection
                     </Label>
                     <Tooltip>
-                      <TooltipTrigger asChild>
-                        <button type="button" className="text-muted-foreground transition-colors hover:text-blue-500">
-                          <Info className="h-3.5 w-3.5" />
-                        </button>
+                      <TooltipTrigger className="text-muted-foreground transition-colors hover:text-blue-500">
+                        <Info className="h-3.5 w-3.5" />
                       </TooltipTrigger>
                       <TooltipContent className="max-w-xs text-xs">
                         <p className="font-semibold mb-1">Harvard Study of Adult Development</p>
@@ -135,10 +133,8 @@ export default function HomePage() {
                       Savoring a Moment
                     </Label>
                     <Tooltip>
-                      <TooltipTrigger asChild>
-                        <button type="button" className="text-muted-foreground transition-colors hover:text-amber-500">
-                          <Info className="h-3.5 w-3.5" />
-                        </button>
+                      <TooltipTrigger className="text-muted-foreground transition-colors hover:text-amber-500">
+                        <Info className="h-3.5 w-3.5" />
                       </TooltipTrigger>
                       <TooltipContent className="max-w-xs text-xs">
                         <p className="font-semibold mb-1">Blue Zones Research</p>
@@ -182,10 +178,8 @@ export default function HomePage() {
                       Flow State
                     </Label>
                     <Tooltip>
-                      <TooltipTrigger asChild>
-                        <button type="button" className="text-muted-foreground transition-colors hover:text-indigo-500">
-                          <Info className="h-3.5 w-3.5" />
-                        </button>
+                      <TooltipTrigger className="text-muted-foreground transition-colors hover:text-indigo-500">
+                        <Info className="h-3.5 w-3.5" />
                       </TooltipTrigger>
                       <TooltipContent className="max-w-xs text-xs">
                         <p className="font-semibold mb-1">Optimal Experience</p>
