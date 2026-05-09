@@ -10,7 +10,12 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { toast } from "sonner";
-import { Users, Utensils, Zap } from "lucide-react";
+import { Users, Utensils, Zap, Info } from "lucide-react";
+import { 
+  Tooltip, 
+  TooltipContent, 
+  TooltipTrigger 
+} from "@/components/ui/tooltip";
 
 export default function HomePage() {
   const { user } = useAuth();
@@ -83,9 +88,22 @@ export default function HomePage() {
                   <Users className="h-5 w-5" />
                 </div>
                 <div>
-                  <Label htmlFor="connection" className="text-base font-semibold">
-                    Meaningful Connection
-                  </Label>
+                  <div className="flex items-center gap-1.5">
+                    <Label htmlFor="connection" className="text-base font-semibold">
+                      Meaningful Connection
+                    </Label>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <button type="button" className="text-muted-foreground transition-colors hover:text-blue-500">
+                          <Info className="h-3.5 w-3.5" />
+                        </button>
+                      </TooltipTrigger>
+                      <TooltipContent className="max-w-xs text-xs">
+                        <p className="font-semibold mb-1">Harvard Study of Adult Development</p>
+                        <p>A "hit" is any brief, positive interaction where you felt seen or heard. It's the #1 predictor of long-term health and happiness.</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </div>
                   <p className="text-xs text-muted-foreground">
                     Did you connect with someone today?
                   </p>
@@ -112,9 +130,22 @@ export default function HomePage() {
                   <Utensils className="h-5 w-5" />
                 </div>
                 <div>
-                  <Label htmlFor="savor" className="text-base font-semibold">
-                    Savoring a Moment
-                  </Label>
+                  <div className="flex items-center gap-1.5">
+                    <Label htmlFor="savor" className="text-base font-semibold">
+                      Savoring a Moment
+                    </Label>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <button type="button" className="text-muted-foreground transition-colors hover:text-amber-500">
+                          <Info className="h-3.5 w-3.5" />
+                        </button>
+                      </TooltipTrigger>
+                      <TooltipContent className="max-w-xs text-xs">
+                        <p className="font-semibold mb-1">Blue Zones Research</p>
+                        <p>Savoring is the act of stepping outside of an experience to review and appreciate it while it is happening. It helps your brain process positive emotions longer.</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </div>
                   <p className="text-xs text-muted-foreground">
                     Something simple that sparked joy.
                   </p>
@@ -146,9 +177,22 @@ export default function HomePage() {
                   <Zap className="h-5 w-5" />
                 </div>
                 <div>
-                  <Label htmlFor="flow" className="text-base font-semibold">
-                    Flow State
-                  </Label>
+                  <div className="flex items-center gap-1.5">
+                    <Label htmlFor="flow" className="text-base font-semibold">
+                      Flow State
+                    </Label>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <button type="button" className="text-muted-foreground transition-colors hover:text-indigo-500">
+                          <Info className="h-3.5 w-3.5" />
+                        </button>
+                      </TooltipTrigger>
+                      <TooltipContent className="max-w-xs text-xs">
+                        <p className="font-semibold mb-1">Optimal Experience</p>
+                        <p>A "flow state" occurs when you are so involved in an activity that nothing else seems to matter. It's often described as being "in the zone."</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </div>
                   <p className="text-xs text-muted-foreground">
                     Deep focus or losing track of time.
                   </p>
